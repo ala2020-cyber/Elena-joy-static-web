@@ -1,0 +1,72 @@
+@font-face {
+    font-family:Vibes;
+    src:url(../fonts/GreatVibes-Regular.ttf);
+}
+@font-face {
+    font-family:Frank-Medium;
+    src:url(../fonts/FrankRuhlLibre-Medium.ttf);
+}
+@font-face {
+    font-family:Frank-Regular;
+    src:url(../fonts/FrankRuhlLibre-Regular.ttf);
+}
+
+:root {
+    --coulor1:#dad6db;
+    --coulor2:#414141;
+    --coulor3:#906272;
+
+}
+*,::before,::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    list-style:none;
+    color:#000;
+}
+
+.container {
+    padding:3% 4.5%;
+    margin-inline:auto;
+}
+
+
+/* navigation styling  */
+
+nav {
+    padding:3% 4.5% 9px;
+    font-size:1.2rem;
+    font-family:Frank-Regular;
+    display:flex;
+    justify-content: space-between;
+    box-shadow:0 5px 8px 0  #ddd;
+}
+    #logo{
+        font-size:1.6rem;
+        font-family:Vibes;
+        min-width:max-content;
+    }
+    .nav-links {
+        display:flex;
+        /* line-height:37px; */
+    }
+    .nav-links li {
+        margin-inline:50px;
+        position:relative;
+    }
+    .nav-links a::before {
+        content:"";
+        position:absolute;
+        left:5px;
+        width:0;
+        height:1px;
+        background-color: #000;
+        transition: width 0.5s ease-in ;
+    }
+    .nav-links a:hover::before {
+        width:100%;
+    }
+
+
+
