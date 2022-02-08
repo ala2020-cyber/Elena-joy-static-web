@@ -12,9 +12,10 @@
 }
 
 :root {
-    --colour2:#414141;
-    --colour1:#dad6db;
+    --colour1:#414141;
+    --colour2:#dad6db;
     --colour3:#906272;
+    --colour4:#444444;
 
 }
 *,::before,::after {
@@ -45,20 +46,23 @@ nav {
     font-family:Frank-Regular;
     display:flex;
     justify-content: space-between;
-    box-shadow:0 5px 7px #ddd;
+    box-shadow:0 2px 7px #ddd;
 }
     #logo{
-        font-size:1.6rem;
+        font-size:1.7rem;
         font-family:Vibes;
         min-width:max-content;
+        padding-left:30px;
     }
     .nav-links {
         display:flex;
-        /* line-height:37px; */
     }
     .nav-links li {
         margin-inline:50px;
         position:relative;
+    }
+    .nav-links a {
+        font-size:1.3rem;
     }
     .nav-links a::before {
         content:"";
@@ -76,34 +80,77 @@ nav {
 
 /* landing styling  */
 #hero {
-    
+    text-align:center;
 }
 #hero .container {
-    display: flex;
+    display:flex;
 }
-    .hero-introduction {
 
+    .hero-introduction {
+        width:60%;
+        height:60vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .hero-images {
-        background-color:var(--colour1);
+    #hero h2 {
+        line-height: 1.2;
+        font-size:3.5rem;
+        padding-block:20px;
+    }
+    #hero p {
+    color: var(--colour4);
+    font-size: 1.3rem;
+    max-width: 362px;
+    margin-block: 20px;
+    }
+
+    .gallery-btn{
+        font-family:Frank-Regular;
+        font-size:1.5rem;
+        padding:13px 40px;
+        margin:20px 0;
+        border:1px solid #000;
+        width: max-content;
         position:relative;
+    }
+    .gallery-btn::before {
+        content:"";
+        position: absolute;
+        top:0;left:0;
+        background-color: #000;
+        width:100%;
+        height:0;
+        opacity:0.1;
+        transition:.3s ease-in-out;
+    }
+    .gallery-btn:hover::before {
+        height:100%;
+    }
+
+    .hero-images {
+        width:40%;
+        background-color:var(--colour2);
+        position:relative;
+        height:;
     }
     .hero-elena {
-        width:60%;
-        position:relative;
+        width:100%;
+        position:absolute;
+        bottom:0;
+        left:1%;
         z-index:1;
     }
-    .plant {
-        width:39%;
+
+    .final-plant {
         position:absolute;
-    }
-    .plant1{
-        left:0;
-        bottom:0;
-    }
-    .plant2 {
-        right:128px;
-        bottom:0;
-    }
+        bottom: 30px;
 
-
+    }
+    .plant{
+        width:49%;
+    }
+    .final-plant {
+        transform:scale(1.2);
+    }
