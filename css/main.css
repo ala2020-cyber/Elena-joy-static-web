@@ -33,14 +33,14 @@ a{
 }
 
 .container {
-    padding:0 2.5%;
-    margin-inline:auto;
+    margin:0 0.3%;
 }
 
 
 /* navigation styling  */
 header {
-    padding-inline:2.5%;
+    position:relative;
+    z-index:1000;
 }
 nav {
     padding:3% 0 9px;
@@ -48,7 +48,7 @@ nav {
     font-family:Frank-Regular;
     display:flex;
     justify-content: space-between;
-    box-shadow:0 2px 7px #ddd;
+    box-shadow:0 5px 30px -10px  rgb(126, 121, 121);
 }
     #logo{
         font-size:1.7rem;
@@ -69,7 +69,7 @@ nav {
     .nav-links a::before {
         content:"";
         position:absolute;
-        top:-4px;
+        top:1px;
         width:0;
         height:1.2px;
         background-color: #000;
@@ -174,8 +174,8 @@ nav {
             font-weight:100;
             letter-spacing: 10px;
             position:absolute;
-            top: 111px;
-            left: 146px;
+            top: 120px;
+            left: 178px;
         }
         .about-image img {
             width:100%;
@@ -185,7 +185,6 @@ nav {
                     width:60%;
                     background-color: var(--colour1);
                     color:#fff;
-                    padding-top:2%;
                 }
                 .about-text h2 {
                     font-family: Vibes;
@@ -232,7 +231,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
 }
-.card:hover{
+.card:hover, button:hover{
     transform:translateY(-3px) scale(1.1);
 }
 
@@ -269,20 +268,22 @@ nav {
     
 }
 #contact-text{
-    font-size:2rem;
+    font-size:3rem;
 }
 span {
-    font-size:3rem;
+    font-size:4.5rem;
     color:var(--colour3);
 }
 form > * {
     display: block;
     margin:10px 0;
-    font-size:1.3rem;
     border:inherit;
     height: 40px;
     width:250px;
     cursor:pointer;
+}
+label {
+    font-size: 1.5rem;
 }
 input[type="email"] {
     background:var(--colour1);
@@ -296,6 +297,7 @@ input:focus {
 }
 
 #contact button {
+    font-size:1.1rem;
     width:100%;
     color:#fff;
     background:var(--colour3);
@@ -307,3 +309,27 @@ input:focus {
 
 /* footer section style  */
 
+
+footer .container {
+    background:var(--colour1);
+    display:flex;
+    justify-content:space-between;
+    color:#fff;
+    padding:8px 0;
+
+}
+footer h4 {
+    font-family:Frank-Regular;
+    font-weight:200;
+    font-size: 1.2rem;
+    padding-inline:50px;
+}
+
+footer li {
+    display: inline;
+    padding:0 50px;
+    
+}
+footer img {
+    width:25px;
+}
