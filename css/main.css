@@ -183,7 +183,6 @@ nav {
                 /* about text style  */
                 .about-text {
                     width:60%;
-                    height:683px;
                     background-color: var(--colour1);
                     color:#fff;
                     padding-top:2%;
@@ -250,3 +249,61 @@ nav {
 .image4{
     grid-row:2 / 4;
 }  
+
+
+/* contact section style  */
+#contact {
+}
+
+#contact .container {
+    display:flex;
+    
+}
+
+.form-wrapper{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#contact-text{
+    font-size:2rem;
+}
+span {
+    font-size:3rem;
+    color:var(--colour3);
+}
+form > * {
+    display: block;
+    margin:10px 0;
+    font-size:1.3rem;
+    border:inherit;
+    height: 40px;
+    width:250px;
+    cursor:pointer;
+}
+input[type="email"] {
+    background:var(--colour1);
+    color:#fff;
+    font-size:16px;
+    padding-left:10px;
+}
+
+input:focus {
+    outline:none;
+}
+
+#contact button {
+    width:100%;
+    color:#fff;
+    background:var(--colour3);
+    
+}
+.contact-image {
+    width:40%;
+}
+
+/* footer section style  */
+
