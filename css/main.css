@@ -25,6 +25,9 @@
     text-decoration:none;
     list-style:none;
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     overflow-x:hidden;
 }
@@ -332,4 +335,9 @@ footer li {
 }
 footer img {
     width:25px;
+    transition: 0.1s ease-out;
+}
+footer img:hover {
+    background-color:var(--colour3);
+    border-radius: 8px;
 }
