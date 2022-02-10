@@ -93,7 +93,7 @@ nav {
     /* introduction style */
     .hero-introduction {
         width:60%;
-        height:60vh;
+        height:80vh;
         display:flex;
         flex-direction: column;
         justify-content: center;
