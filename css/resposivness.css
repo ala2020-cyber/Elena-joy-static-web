@@ -1,0 +1,16 @@
+
+/* media query zone  */
+
+@media screen and (max-width:752px){
+    #logo {
+        display: flex;
+        justify-content:space-around;
+    }
+    .nav-links {
+        display:none;
+    }
+    #bar-icon {
+        display:flex;
+        padding-right:30px;
+    }
+}
