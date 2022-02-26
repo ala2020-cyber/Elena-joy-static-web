@@ -2,6 +2,8 @@
 /* media query zone  */
 
 @media screen and (max-width:752px){
+
+    /* for navigation bar  */
     #logo {
         display: flex;
         justify-content:space-around;
@@ -22,13 +24,12 @@
         height:70vh;
         opacity:0;
         background-color: #fff;
-        transition: left 0.25s ease-in-out,
-        opacity 0.25s ease-in-out;
+        transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
         border-radius: 0 0 10px 10px;
         box-shadow:0 0 30px -10px  rgb(126, 121, 121);
     }
     .nav-links li {
-        margin:30px 50px;
+        margin:20px 50px;
         
     }
     .nav-links-open {
@@ -39,5 +40,15 @@
         display:flex;
         padding-right:30px;
         cursor:pointer;
+    }
+
+    /* for hero section */
+    #hero .container {
+        display:flex;
+        flex-direction: column;
+    }
+    .hero-images {
+        width:99%;
+        margin:0 0.3%;
     }
 }
