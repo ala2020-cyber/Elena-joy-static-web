@@ -49,6 +49,46 @@
     }
     .hero-images {
         width:99%;
+        height:75vh;
         margin:0 0.3%;
+    }
+}
+
+/* fixing hero image  */
+@media screen and (max-width:1154px) {
+    #hero {
+        height:calc(100% - 63.1px);
+    }
+    .hero-images {
+        height:72vh;
+    }
+}
+
+@media (max-width:410px) {
+    .hero-images {
+        height:50vh;
+    }
+}
+/* about section responsiveness   */
+@media (max-width:680px) {
+    .about-image {
+        display:none;
+    }
+    .about-text {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-life,.about-work, .about-contact {
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items: center;
+        width:fit-content;
+    }
+    #about h3 {
+        width:100%;
     }
 }
