@@ -192,7 +192,7 @@ nav {
 }
         /* about image style  */
         .about-image {
-            width:40%;
+            width:50%;
             height:100vh;
             background:url("../img/about-image.png") center / cover no-repeat ;
         }
@@ -203,7 +203,7 @@ nav {
             font-weight:100;
             letter-spacing: 10px;
             text-align: center;
-            margin-top:18vh;
+            margin-top:15vh;
         }
                 /* about text style  */
                 .about-text {
@@ -211,25 +211,23 @@ nav {
                     height:100vh;
                     background-color: var(--about-color);
                     color:#fff;
+                    padding:50px 0;
                 }
                 .about-text h2 {
                     font-family: Vibes;
                     font-size:2rem;
                     text-align: center;
-                    margin:30px 0 40px;
+                    margin:30px 0 0;
                 }
-                .about-life, .about-work{
-                    margin:10px 80px 30px ;
+                .about-life, .about-work, .about-contact{
+                    margin:10px 50px;
                 }
                 .about-text h3 {
                     font-size:clamp(25px,2vw,2rem);
-                    margin-bottom:15px;
+                    margin:30px 0 0 ;
                 }
                 .about-text p {
                     color:var(--color-gray);
-                }
-                .about-contact {
-                    margin: 10px 80px 0;
                 }
 
 /* gallery styling  */
