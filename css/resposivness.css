@@ -92,3 +92,22 @@
         width:100%;
     }
 }
+
+/* responsivness for gallery section  */
+@media (min-width:732px){
+    .image1{
+        grid-column:span 2;
+    }
+    .image2{
+        grid-row:span 3;
+    } 
+    
+    .image3, .image4{
+        grid-row:2 / 4;
+    }
+    #gallery .container {
+        grid-auto-rows:200px;
+    }
+
+    
+}
