@@ -37,7 +37,7 @@ a{
 }
 
 .container {
-    margin:0 0.3%;
+    margin:0 10px;
 }
 
 p {
@@ -59,7 +59,7 @@ nav {
     font-family:Frank-Regular;
     display:flex;
     justify-content: space-between;
-    box-shadow:0 5px 30px -10px  rgb(126, 121, 121);
+    box-shadow:0 7px 15px -12px  rgb(126, 121, 121);
 }
     #logo{
         font-size:1.7rem;
@@ -233,7 +233,7 @@ nav {
 /* gallery styling  */
 
 #gallery {
-    margin-top:-3px;
+    height: 100vh;
 }
 
 #gallery .container {
@@ -283,7 +283,7 @@ nav {
 }
 
 .form-wrapper{
-    width:60%;
+    width:60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -327,7 +327,7 @@ input:focus {
     
 }
 .contact-image {
-    width:clamp(50%,4vw,500px);
+    width:40vw;
 }
 
 /* footer section style  */

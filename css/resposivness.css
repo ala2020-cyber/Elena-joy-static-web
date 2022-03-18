@@ -96,10 +96,10 @@
 /* responsivness for gallery section  */
 @media (min-width:732px){
     .image1{
-        grid-column:span 2;
+        grid-column:span 3;
     }
     .image2{
-        grid-row:span 3;
+        grid-row:span 4;
     } 
     
     .image3, .image4{
