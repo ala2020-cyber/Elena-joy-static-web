@@ -1,6 +1,3 @@
-
-
-
 // navigation button functionalitie
 var bar=document.getElementById("bar-icon");
 var links=document.querySelector(".nav-links");
